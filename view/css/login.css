@@ -1,0 +1,80 @@
+@font-face{
+    font-family: Antonio-Regular;
+    src: url(../fonts/antonio/Antonio-Regular.ttf);
+}
+
+@font-face{
+    font-family: Antonio-Bold;
+    src: url(../fonts/antonio/Antonio-Bold.ttf);
+}
+
+@font-face{
+    font-family: Antonio-Light;
+    src: url(../fonts/antonio/Antonio-Light.ttf);
+}
+
+.background{
+    background-image: url(../images/background.jpeg);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.login{
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 35px;
+    margin-top: 10%;
+}
+
+h1{
+    font-size: 148.39pt !important;
+    font-family: Antonio-Bold !important;
+    color: #19294d !important;
+}
+
+h2{
+    font-family: Antonio-Regular !important;
+    font-size: 19.6pt !important;
+    color: #404040 !important;
+}
+
+.username, .password{
+    padding-left: 8px;
+    width: 269px !important;
+    border-radius: 5px;
+}
+
+.username::-webkit-input-placeholder{
+    font-family: antonio-light;
+    font-size: 8pt;
+}
+
+.password::-webkit-input-placeholder{
+    font-family: antonio-light;
+    font-size: 8pt;
+}
+
+.button{
+    font-family: Antonio-regular;
+    width: 269px;
+}
+
+.intro{
+    margin-top: 10%;
+    font-family: Antonio-regular;
+    font-size: 16pt;
+}
+
+.margin-top-10{
+    margin-top: 10px;
+}
+
+.button{
+    height: 32px;
+    padding-top: 3px !important;
+}
