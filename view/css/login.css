@@ -35,6 +35,7 @@ h1{
     font-size: 148.39pt !important;
     font-family: Antonio-Bold !important;
     color: #19294d !important;
+    height: 205px;
 }
 
 h2{
@@ -43,10 +44,36 @@ h2{
     color: #404040 !important;
 }
 
+.centro, .background{
+    position: relative;
+    width: 100%;
+}
+
+.container-login{
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    transform: translate(-50%, -62%);
+}
+
+.linha-vertical{
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+}
+
+.linha-vertical{
+    height: 255px;/*Altura da linha*/
+    border-left: 1px solid;/* Adiciona borda esquerda na div como ser fosse uma linha.*/
+    margin-top: 65px;
+}
+
 .username, .password{
     padding-left: 8px;
     width: 269px !important;
     border-radius: 5px;
+    border-color: black;
+    border-width: 1px;
 }
 
 .username::-webkit-input-placeholder{
@@ -65,7 +92,7 @@ h2{
 }
 
 .intro{
-    margin-top: 10%;
+    margin-top: 50px;
     font-family: Antonio-regular;
     font-size: 16pt;
 }
@@ -77,4 +104,40 @@ h2{
 .button{
     height: 32px;
     padding-top: 3px !important;
+}
+
+.form-login, .titulo{
+    margin-top: 60px;
+    margin-bottom: 80px; 
+}
+
+.titulo{
+    margin-right: -40px;
+    margin-left: 40px; 
+}
+
+.form-login{
+    margin-left: -40px;
+}
+
+@media screen and (max-width: 767px){
+    .linha-vertical{
+        height: 1px;/*Altura da linha*/
+        border-left: 255px solid;/* Adiciona borda esquerda na div como ser fosse uma linha.*/
+        margin-top: 50px;
+    }
+
+    .titulo{
+        margin: 0;
+    }
+
+    .form-login{
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-height: 700px){
+    .row{
+        margin-top: 252px;
+    }
 }
